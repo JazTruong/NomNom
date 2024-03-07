@@ -1,0 +1,60 @@
+.wrapper-calorie {
+  background-color: rgb(237, 237, 233);
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 400px;
+    object-fit: cover;  
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+  }
+}
+
+.card-calorie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  p {
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 480;
+  }
+}
+
+.info-calorie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  button {
+    margin: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+  }
+}
+
+.form-calorie {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 1rem auto;
+
+  label {
+    margin: 5px;  
+  }
+
+  input {
+    border: 2px solid black;
+    padding: 3px;
+  }
+
+  select {
+    border: 2px solid black;
+  }
+}
+
+
+

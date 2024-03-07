@@ -1,11 +1,13 @@
 import Popular from "../components/Popular";
-import Veggie from "../components/Veggie";
+import Picked from "../components/Picked";
+import Calorie from "../components/Calorie";
 
 export default function Home() {
   return (
     <div>
-      <Veggie />
+      <Picked />
       <Popular />
+      <Calorie />
     </div>
   )
 }
