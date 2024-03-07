@@ -15,33 +15,22 @@ export default function CaloriePlan() {
   }, [params.calorie])
 
   async function getCalories(number) {
-    const check = localStorage.getItem('nutrients')
-    const checkCal = localStorage.getItem('calories')
-    if(check) {
-      setNutrients(JSON.parse(check))
-    } else {
+ 
       const url = `https://api.spoonacular.com/mealplanner/generate?apiKey=${apiKey}&targetCalories=${number}&timeFrame=day`
       const res = await axios.get(url)
       const mealPlan = res.data
-      localStorage.setItem('nutrients', JSON.stringify(mealPlan.nutrients))
-      // setCalories(mealPlan.meals)
-      setNutrients(mealPlan.nutrients)
-      console.log(mealPlan.nutrients)
-    }
-    if(checkCal) {
-      setCalories(JSON.parse(checkCal))
-    } else {
-      const url = `https://api.spoonacular.com/mealplanner/generate?apiKey=${apiKey}&targetCalories=${number}&timeFrame=day`
-      const res = await axios.get(url)
-      const mealPlan = res.data
-      localStorage.setItem('calories', JSON.stringify(mealPlan.meals))
       setCalories(mealPlan.meals)
-      // setNutrients(mealPlan.nutrients)
-      console.log(mealPlan.meals)
-    }
+      setNutrients(mealPlan.nutrients)   
   }
 
-  
+  // async function getImage(id) {
+ 
+  //     const url = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}&includeNutrition=false`
+  //     const res = await axios.get(url)
+  //     const mealPlan = res.data
+  //     setCalories(mealPlan.meals)
+  //     setNutrients(mealPlan.nutrients)   
+  // }
   
   return (
     <div className="plan-wrapper">
@@ -63,23 +52,21 @@ export default function CaloriePlan() {
       </div>
 
       <div className="plan-meals">
-        <p className="plan-daily">WHOLE DAY PLAN</p>
+        <p className="plan-daily">WHOLE DAY MENU</p>
         <div className="plan-details">     
           {
             calories.map((calorie, idx) => (
               <div className="plan-info" key={calorie.id}>
-              {idx === 0 ? <h1>Breakfast</h1> : ''}
-              {idx === 1 ? <h1>Lunch</h1> : ''}
-              {idx === 2 ? <h1>Dinner</h1> : ''}
-              
-              <h3>{calorie.title}</h3>
-              <p>Ready In: {calorie.readyInMinutes} mins</p>
-              <p>Number Of Servings: {calorie.servings}</p>
-              <Link to={`/recipe/${calorie.id}`}>
-                <p className="plan-btn">VIEW RECIPE</p>
-              </Link>
-             
-                        
+                {idx === 0 ? <h1>Breakfast</h1> : ''}
+                {idx === 1 ? <h1>Lunch</h1> : ''}
+                {idx === 2 ? <h1>Dinner</h1> : ''}
+                
+                <h3>{calorie.title}</h3>
+                <p>Ready In: {calorie.readyInMinutes} mins</p>
+                <p>Number Of Servings: {calorie.servings}</p>
+                <Link to={`/recipe/${calorie.id}`}>
+                  <p className="plan-btn">VIEW RECIPE</p>
+                </Link>                
               </div>
               ))
             }

@@ -14,16 +14,10 @@ export default function Popular() {
   }, [])
 
   async function getPopular() {
-    const check = localStorage.getItem('popular')
-    if(check) {
-      setPopular(JSON.parse(check))
-    } else {
       const url = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=10`
       const res = await axios.get(url)
       const data = res.data
-      localStorage.setItem('popular', JSON.stringify(data.recipes))
       setPopular(data.recipes)
-    }
   }
 
   return (

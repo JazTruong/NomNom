@@ -37,6 +37,7 @@ However, there are some improvements needed. For instance, I didn't plan in deta
 
 ## ✅ Future features
 - Add sending email feature
+- Instruction videos (if can get the source)
 - Convertor for measurement units (US Customary and Metric)
 - Improve UX design (make the instruction easier to read)
 - User function (for add to favourites or send newsletter)

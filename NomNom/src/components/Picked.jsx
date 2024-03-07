@@ -12,17 +12,10 @@ export default function Picked() {
   }, [])
 
   async function getPicked() {
-    const check = localStorage.getItem('veggie')
-
-    if(check) {
-      setDish(JSON.parse(check))
-    } else {
-      const url = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=1`
-      const res = await axios.get(url)
-      const data = res.data
-      localStorage.setItem('veggie', JSON.stringify(data.recipes[0]))
-      setDish(data.recipes[0])
-    }
+    const url = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=1`
+    const res = await axios.get(url)
+    const data = res.data
+    setDish(data.recipes[0])
   }
 
   return (
