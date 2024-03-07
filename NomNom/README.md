@@ -1,22 +1,22 @@
 # NomNom Recipes - React App
 
-![HomePage](/HomePage.png)
-![RecipePage](/RecipePage.png)
+![HomePage](public/HomePage.png)
+![RecipePage](public/RecipePage.png)
 
 This React-based recipe app, powered by Spoonacular API, showcases my recent two-week immersion in React development. With features like random meal recipe discovery, personalized meal plan generation based on daily calorie intake goals, and quick lunch idea searches, users can easily explore, plan, and prepare meals tailored to their tastes and dietary needs.
 
-[Click here] to see my live project!(https://nomnomrecipe.surge.sh/)
+[Click here to see my live project!](https://nomnomrecipe.surge.sh/)
 
 
 ## Planning & Problem Solving
 
 ### Wireframe
 
-![Wireframe](/Wireframe.png)
+![Wireframe](public/Wireframe.png)
 
 This wireframe showcases my MVP. The idea was to show a clean, simple front page with options to explore further in the app. I planned to have multiple pages according number of components in the app, they all linked via buttons or clickable images. Display all the dishes (images) in form of slideshow or grid.  
 
-[Click here] to see my Trello board!(https://trello.com/b/OS1OSUgR/nomnom)
+[Click here to see my Trello board!](https://trello.com/b/OS1OSUgR/nomnom)
 
 ## 🚀 Cool tech
 
