@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+/* .App {
+  width: 60vw;
+  margin: auto;
+} */
+
+.logo {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.logo img {
+  width: 350px;
+}

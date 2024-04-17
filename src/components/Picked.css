@@ -1,0 +1,42 @@
+.picked {
+  background-color: rgb(237, 237, 233);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  
+  img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+  }
+
+}
+
+.picked-dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  p {
+  font-size: 1.5rem;
+  font-weight: 480;
+  margin: 2rem;
+  }
+
+  button {
+    width: 10rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+  }
+}
+
+.picked-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 2rem;
+  gap: 3rem;
+}

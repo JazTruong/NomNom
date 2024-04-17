@@ -1,0 +1,61 @@
+
+
+.plan-nutrient {
+  margin: 5rem auto;
+  background-color: rgb(237, 237, 233);
+  height: 200px;
+}
+
+.nutrient-title {
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 480;
+}
+
+.nutrient-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin: 2rem auto;
+  
+}
+
+.plan-daily {
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 480;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 2rem;
+
+  h1 {
+    font-weight: 400;
+    margin: 2rem auto;
+  }
+
+  h3 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  .plan-btn {
+    color: black;
+    cursor: pointer;
+    margin: 2rem;
+  }
+}
+
+.plan-info {
+  background-color: rgb(237, 237, 233);
+}
